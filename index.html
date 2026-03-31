@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dalat Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="hamburger">☰</div>
+
+    <div id="sidebar">
+      <div class="sidebar-header">Dalat Plan</div>
+
+      <select id="filter">
+        <option value="all">Tất cả</option>
+        <option value="food">Ăn uống</option>
+        <option value="cafe">Cafe</option>
+        <option value="play">Vui chơi</option>
+        <option value="hotel">Khách sạn</option>
+        <option value="transport">Thuê xe</option>
+      </select>
+
+      <div id="place-list"></div>
+
+      <div class="sidebar-footer">
+        <button id="btnGo">Đi tới</button>
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/ui.js"></script>
+  </body>
+</html>
